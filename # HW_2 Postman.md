@@ -11,6 +11,7 @@ http://162.55.220.72:5005/first
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
+
 //Проверить, что в body приходит правильный string
 pm.test("Body is correct", function () {
     pm.response.to.have.body("This is the first responce from server!ss");
